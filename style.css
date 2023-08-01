@@ -97,7 +97,7 @@ p:last-child{
 /* header */
 .header-section {
   padding: 30px 0;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -254,6 +254,7 @@ p:last-child{
 
 /* --preloader-- */
 #preloader {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -294,6 +295,17 @@ p:last-child{
 }
 /* --preloader-end-- */
 
+
+/* ---full-page--- */
+#fullpage {
+}
+.section {
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* ---full-page---end */
 
 
 /* ---hero-section--- */
@@ -441,8 +453,48 @@ p:last-child{
   justify-content: center;
 }
 .go-bottom-button {
+  width: 30px;
+  height: 42px;
+  border: 3px solid #D9D9D9;
+  border-radius: 40px;
   margin-top: 58px;
   display: inline-flex;
+  position: relative;
+}
+.go-bottom-button::before {
+  content: '';
+  height: 9px;
+  width: 3px;
+  display: block;
+  position: absolute;
+  background: var(--theme__color1);
+  border-radius: 10px;
+  left: 50%;
+  transform: translate(-50%,0);
+  top: 6px;
+  animation: 2s go-bottom-button-animation linear infinite;
+}
+@keyframes go-bottom-button-animation {
+  0% {
+    opacity: 0;
+    top: 6px;
+  }
+  15% {
+    opacity: 1;
+    top: 6px;
+  }
+  50% {
+    opacity: 1;
+    top: 20px;
+  }
+  90% {
+    opacity: 0;
+    top: 20px;
+  }
+  100% {
+    opacity: 0;
+    top: 6px;
+  }
 }
 /* ---tools-section---end */
 
