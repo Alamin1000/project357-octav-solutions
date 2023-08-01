@@ -28,6 +28,31 @@
   $('input[type="radio"]').closest("label").css("cursor", "pointer");
 
   // owl-carousel
+  $(".tools-list-slider-active").owlCarousel({
+    loop: true,
+    margin: 48,
+    responsiveClass: true,
+    autoWidth: true,
+    center: true,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    navText: [
+      '<i class="far fa-arrow-left"></i>',
+      '<i class="far fa-arrow-right"></i>',
+    ],
+    responsive: {
+      0: {
+        margin: 20,
+      },
+      600: {
+        margin: 32,
+      },
+      1000: {
+        margin: 48,
+      },
+    },
+  });
   $(".ns-slider-active").owlCarousel({
     loop: true,
     margin: 10,
@@ -92,22 +117,62 @@
   });
 
   // fullPage
+  $("[data-aos]").each(function () {
+    $(this).addClass("aos-init");
+  });
   new fullpage("#fullpage", {
     // sectionsColor: ["yellow", "orange", "#C0C0C0", "#ADD8E6"],
     anchors: ["page1", "page2", "page3", "page4"],
     navigationTooltips: ["fullPage", "Open", "Easy", "Touch"],
     css3: true,
     scrollingSpeed: 1000,
-    navigation: true,
+    // navigation: true,
     slidesNavigation: true,
     responsiveHeight: 330,
+    responsiveWidth: 992,
     dragAndMove: true,
     dragAndMoveKey:
       "YkdZV3gyWVhKdmRISnBaMjh1WTI5dEE3X09keFpISmhaMEZ1WkUxdmRtVT0xbmw=",
     controlArrows: false,
     // Get your license at https://alvarotrigo.com/fullPage/pricing/
-    licenseKey: "YOUR LICENSE KEY HERE ",
+    // licenseKey: "YOUR LICENSE KEY HERE ",
+    onLeave: function () {
+      $(".section [data-aos]").each(function () {
+        $(this).removeClass("aos-animate");
+      });
+    },
+    onSlideLeave: function () {
+      $(".slide [data-aos]").each(function () {
+        $(this).removeClass("aos-animate");
+      });
+    },
+    afterSlideLoad: function () {
+      $(".slide.active [data-aos]").each(function () {
+        $(this).addClass("aos-animate");
+      });
+    },
+    afterLoad: function () {
+      $(".section.active [data-aos]").each(function () {
+        $(this).addClass("aos-animate");
+      });
+    },
   });
+
+  // tbr_nav_ul
+  {
+    let tbr_nav_ul = document.getElementById("tbr_nav_ul");
+    let nav_options = tbr_nav_ul.querySelectorAll("li a");
+    let nav_options_count = nav_options.length;
+    let i = 1;
+    setInterval(function () {
+      nav_options[i].click();
+      if (i + 1 == nav_options_count) {
+        i = 0;
+      } else {
+        i++;
+      }
+    }, 5000);
+  }
 })(jQuery);
 
 $(document).ready(function () {

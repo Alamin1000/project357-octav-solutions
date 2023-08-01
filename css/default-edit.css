@@ -1,21 +1,21 @@
 /* ---buttons--- */
 .default-button {
-    padding: 10px 25px;
-    font-size: 16px;
-    font-weight: 600;
-    min-height: 54px;
-    min-width: 182px;
-    border-radius: 3px;
-    background: var(--theme__color1);
-    color: #292835;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 2px solid transparent;
-    transition: 0.3s;
-    position: relative;
-    z-index: 1;
+	padding: 8px 20px;
+	font-size: 14px;
+	font-weight: 600;
+	min-height: 47px;
+	min-width: 160px;
+	border-radius: 3px;
+	background: var(--theme__color1);
+	color: #292835;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border: 2px solid transparent;
+	transition: 0.3s;
+	position: relative;
+	z-index: 1;
 }
 .default-button:hover {
     background: #18eff7;

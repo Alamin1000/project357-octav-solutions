@@ -22,20 +22,38 @@
     }
 
     .h2 {
-        font-size: 35px;
+        font-size: 30px;
+        margin-bottom: 10px;
     }
     .h2-bdr {
         padding: 0 9px 12px;
     }
     .h4 {
-        font-size: 18px;
+        font-size: 16px;
     }
     .tool-item {
         gap: 8px;
         font-size: 16px;
     }
     .tools-list {
-        gap: 35px;
+        
+    }
+    .go-bottom-button {
+        margin-top: 30px;
+    }
+    .tools-section {
+        padding: 30px 0;
+    }
+
+    .section {
+        padding-top: 40px;
+    }
+
+    .xr-section {
+        padding: 50px 0;
+    }
+    .xr-row {
+        padding: 0 10%;
     }
     .xr-card .icon {
         margin-bottom: 8px;
@@ -43,33 +61,45 @@
         height: 50px;
     }
     .xr-card h3 {
-        font-size: 17px;
-        margin: 0 0 12px;
+        font-size: 14px;
+        margin: 0 0 7px;
     }
     .xr-card p {
-        font-size: 14px;
+        font-size: 11.5px;
     }
     .xr-card {
-        padding: 13px 15px 26px;
+        padding: 6px 10px 18px;
         border-radius: 5px;
         border-width: 1px;
     }
     .xr-cards {
-        --bs-gutter-x: 40px;
-        --bs-gutter-y: 38px;
+        --bs-gutter-x: 26px;
+        --bs-gutter-y: 22px;
     }
 
+    .sec-title {
+        margin-bottom: 25px;
+    }
+    .sec-bottom-button-row {
+        margin-top: 20px;
+    }
 
     .rev-cards {
-        --bs-gutter-x: 17px;
-        --bs-gutter-y: 22px;
+        --bs-gutter-x: 12px;
+        --bs-gutter-y: 12px;
     }
     .rev-card {
         border-width: 1px;
-        padding: 25px 18px 24px;
+        padding: 15px 10px 13px;
+        min-height: 160px;
     }
+
+    .rev-section {
+        padding: 40px 0 10px;
+    }
+    
     .rev-card__body p {
-        font-size: 15px;
+        font-size: 12px;
     }
     .rev-card__title .icon {
         height: 30px;
@@ -77,18 +107,19 @@
         margin-left: 5px;
     }
     .rev-card__title .right h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
     .rev-card__title {
-        gap: 28px;
-        margin-bottom: 15px;
+        gap: 16px;
+        margin-bottom: 10px;
     }
-    .rev-card.active .rev-card__title {
-        margin-bottom: 18px;
-        gap: 25px;
+    .rev-card.active .rev-card__title,
+    .rev-card:hover .rev-card__title  {
+        margin-bottom: 13px;
+        gap: 18px;
     }
     .txt-btn {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .cta-card {
@@ -100,6 +131,32 @@
         padding: 0 0px 0 0px;
     }
 
+    .tb-section__title {
+        padding-bottom: 10px;
+    }
+    .tb-section {
+        padding: 45px 0;
+    }
+    .tbr_nav ul li a {
+        padding: 12px 10px 12px 20px;
+        font-size: 14px;
+    }
+    .tbr_nav ul {
+        gap: 25px;
+    }
+    .ttool-item .icon {
+        height: 65px;
+        margin-bottom: 9px;
+        width: 50px;
+    }
+    .ttool-item .txt p {
+        font-size: 12px;
+    }
+
+
+    .ps-section {
+        padding: 55px 0 30px;
+    }
 
     .serve-const-row .serve-content h4 {
         font-size: 18px;
@@ -269,9 +326,57 @@
     }
 
 
-    .rev-card {
-        min-height: 240px;
+    .ns-slide {
+        width: 270px;
     }
+    .ns-card__content h4 {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+    .ns-card__content .tx-btn {
+        font-size: 13px;
+        gap: 7px;
+    }
+    .ns-card__content {
+        padding: 12px 20px 20px;
+        border-radius: 6px;
+        margin: -55px 20px 50px;
+    }
+    .ns-section {
+        padding: 50px 0;
+    }
+    .ns-section__title {
+        padding-bottom: 15px;
+    }
+
+    .cta-card_content h3 {
+        font-size: 25px;
+    }
+    .cta-card {
+        padding: 17px 18px;
+        gap: 25px;
+    }
+    .cta-section {
+        padding: 50px 0 30px;
+    }
+
+    .footer-section {
+        padding: 30px 0 20px;
+    }
+    .footer-menu ul {
+        gap: 14px;
+    }
+    .footer-menu ul li a {
+        font-size: 12px;
+    }
+    .s-ul li a {
+        font-size: 17px !important;
+    }
+    .contact-medias-title-ft {
+        margin-left: 3px;
+    }
+
+
 
 }
 
@@ -369,6 +474,13 @@
         right: 0px;
         width: 260px;
     }
+
+    .header-section {
+        position: static;
+    }
+    .fp-overflow {
+        max-height: unset;
+    }
 }
 
 
@@ -422,29 +534,7 @@
         padding-left: 0;
     }
 
-    .ns-slide {
-        width: 270px;
-    }
-    .ns-card__content h4 {
-        font-size: 15px;
-        margin-bottom: 18px;
-    }
-    .ns-card__content .tx-btn {
-        font-size: 13px;
-        gap: 7px;
-    }
-    .ns-card__content {
-        padding: 12px 20px 20px;
-        border-radius: 6px;
-        margin: -55px 20px 50px;
-    }
-
-    .ns-section {
-        padding: 50px 0;
-    }
-    .ns-section__title {
-        padding-bottom: 15px;
-    }
+    
 
     .cta-section {
         padding: 60px 0;
@@ -691,6 +781,16 @@
     }
     .about-o-content h4 {
         font-size: 18px;
+    }
+
+    .container {
+        padding: 0 10%;
+    }
+    .xr-row {
+        padding: 0;
+    }
+    .rev-cards {
+        padding: 0;
     }
 }
 

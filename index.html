@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://kit-pro.fontawesome.com/releases/v5.15.2/css/pro.min.css"
       rel="stylesheet"
@@ -116,7 +117,7 @@
           <section class="tools-section">
             <div class="container">
               <div class="tools-section__inner">
-                <div class="tools-list">
+                <div class="tools-list tools-list-slider-active owl-carousel">
                   <div class="tool-item">
                     <div class="icon">
                       <img src="images/icon/unplash.png" alt="" />
@@ -151,7 +152,7 @@
 
                 <!-- go-bottom -->
                 <div class="go-bottom">
-                  <a href="#xr-section" class="go-bottom-button">
+                  <a href="#page2" class="go-bottom-button">
                     <!-- <img src="images/icon/move-bottom.svg" alt="" /> -->
                   </a>
                 </div>
@@ -182,16 +183,24 @@
 
                 <div class="xr-row row gy-5">
                   <div class="col-lg-5">
-                    <div class="xr-image">
+                    <div
+                      class="xr-image"
+                      data-aos="fade-right"
+                      data-aos-duration="1500"
+                    >
                       <img src="images/xr-imgae.png" alt="" class="img" />
                     </div>
                   </div>
-                  <div class="col-lg-7">
+                  <div
+                    class="col-lg-7"
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
+                  >
                     <div class="xr-cards row">
                       <div class="col-md-6">
                         <div class="xr-card">
                           <div class="icon">
-                            <img src="images/xr-bisuness.svg" alt="" />
+                            <img src="images/xr-bisuness.png" alt="" />
                           </div>
                           <h3>VR / AR / MR For Business</h3>
                           <p>
@@ -483,9 +492,10 @@
               <div class="tb__row row gy-5">
                 <div class="col-lg-4">
                   <div class="tbr_nav">
-                    <ul class="nav">
+                    <ul class="nav" id="tbr_nav_ul">
                       <li>
                         <a
+                          class="active"
                           data-bs-toggle="tab"
                           data-bs-target="#tb-tab-1"
                           href="#"
@@ -495,7 +505,6 @@
                       </li>
                       <li>
                         <a
-                          class="active"
                           data-bs-toggle="tab"
                           data-bs-target="#tb-tab-2"
                           href="#"
@@ -538,7 +547,10 @@
                   <div class="tbr_content">
                     <div class="tbr_tab-content tab-content">
                       <!-- tbr-tab-pane -->
-                      <div class="tbr-tab-pane tab-pane fade" id="tb-tab-1">
+                      <div
+                        class="tbr-tab-pane tab-pane show active fade"
+                        id="tb-tab-1"
+                      >
                         <div class="tbr-tab-pane__inner">
                           <div class="ttools-row row">
                             <div class="col-md-4 col-6">
@@ -602,10 +614,7 @@
                       </div>
                       <!-- tbr-tab-pane-end -->
                       <!-- tbr-tab-pane -->
-                      <div
-                        class="tbr-tab-pane tab-pane show active fade"
-                        id="tb-tab-2"
-                      >
+                      <div class="tbr-tab-pane tab-pane fade" id="tb-tab-2">
                         <div class="tbr-tab-pane__inner">
                           <div class="ttools-row row">
                             <div class="col-md-4 col-6">
@@ -985,7 +994,7 @@
                 </div>
 
                 <div
-                  class="ns-slider ns-slider-active owl-carousel slider-arrow-1 slider-dots-1 slider-arrow-centered"
+                  class="ns-slider ns-slider-active owl-carousel slider-arrow-1 slider-dots-1 slider-arrow-centered--full-width"
                 >
                   <div class="ns-slide">
                     <div class="ns-card">
@@ -1229,7 +1238,11 @@
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/fullpage.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      AOS.init({ once: true });
+    </script>
     <!-- End All Js -->
   </body>
 </html>
