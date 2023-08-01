@@ -1,0 +1,707 @@
+
+
+@media (max-width: 1399px) {
+ 
+}
+
+
+@media (max-width: 1199px) {
+    .hero-row .col-s {
+        width: 420px;
+        max-width: 100%;
+    }
+    .hero-content .h1 {
+        font-size: 35px;
+    }
+    .hero-content h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .header-section {
+        padding: 20px 0;
+    }
+
+    .h2 {
+        font-size: 35px;
+    }
+    .h2-bdr {
+        padding: 0 9px 12px;
+    }
+    .h4 {
+        font-size: 18px;
+    }
+    .tool-item {
+        gap: 8px;
+        font-size: 16px;
+    }
+    .tools-list {
+        gap: 35px;
+    }
+    .xr-card .icon {
+        margin-bottom: 8px;
+        width: 50px;
+        height: 50px;
+    }
+    .xr-card h3 {
+        font-size: 17px;
+        margin: 0 0 12px;
+    }
+    .xr-card p {
+        font-size: 14px;
+    }
+    .xr-card {
+        padding: 13px 15px 26px;
+        border-radius: 5px;
+        border-width: 1px;
+    }
+    .xr-cards {
+        --bs-gutter-x: 40px;
+        --bs-gutter-y: 38px;
+    }
+
+
+    .rev-cards {
+        --bs-gutter-x: 17px;
+        --bs-gutter-y: 22px;
+    }
+    .rev-card {
+        border-width: 1px;
+        padding: 25px 18px 24px;
+    }
+    .rev-card__body p {
+        font-size: 15px;
+    }
+    .rev-card__title .icon {
+        height: 30px;
+        width: 30px;
+        margin-left: 5px;
+    }
+    .rev-card__title .right h3 {
+        font-size: 20px;
+    }
+    .rev-card__title {
+        gap: 28px;
+        margin-bottom: 15px;
+    }
+    .rev-card.active .rev-card__title {
+        margin-bottom: 18px;
+        gap: 25px;
+    }
+    .txt-btn {
+        font-size: 14px;
+    }
+
+    .cta-card {
+        padding: 33px 25px;
+        gap: 30px;
+        border-width: 1px;
+    }
+    .footer-section__inner {
+        padding: 0 0px 0 0px;
+    }
+
+
+    .serve-const-row .serve-content h4 {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .service-use-content p {
+        font-size: 14px;
+    }
+    .service-use-content h5 {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .service-use-content h3 {
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+    .service-uses-row {
+        --bs-gutter-x: 40px;
+        --bs-gutter-y: var(var(--bs-gutter-x));
+        margin-bottom: 74px;
+    }
+    .service-use-content {
+        padding: 0 8px;
+    }
+
+    .edu-per-cen__item h3 {
+        font-size: 40px;
+    }
+    .edu-per-cen__item p {
+        font-size: 14px;
+    }
+    .edu-per-cen__item {
+        padding: 20px 12px;
+    }
+    .arr-ul li::before {
+        height: 25px;
+        width: 25px;
+        top: 2px;
+    }
+    .arr-ul li {
+        font-size: 17px;
+        padding-left: 40px;
+    }
+    .arr-ul {
+        gap: 18px;
+    }
+    .tb-in-txts h4 {
+        font-size: 16px;
+    }
+    .weo-wet .h4 {
+        font-size: 16px;
+        margin-bottom: 13px;
+    }
+    .ellipse-weo {
+        width: 200px;
+        height: 200px;
+    }
+    .ellipse-weo::after {
+        filter: blur(17px);
+    }
+
+
+    .contact-section__inner {
+        padding: 0;
+    }
+    .contact-content h4 {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .contact-content h3 {
+        color: #D9D9D9;
+        font-size: 28px;
+    }
+    .contact-a .icon {
+        height: 52px;
+        width: 52px;
+        font-size: 18px;
+    }
+    .contact-a .txt .sm {
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+    .contact-a .txt .bm {
+        font-size: 15px;
+    }
+    .contact-a {
+        gap: 18px;
+    }
+
+
+    .about-hero__content h1 {
+        font-size: 38px;
+        margin-bottom: 35px;
+    }
+    .about-hero__content h4 {
+        font-size: 23px;
+    }
+    .mission-top-shape-arrow {
+        top: -210px;
+        right: 60px;
+        width: 160px;
+    }
+    .mission-card h4 {
+        font-size: 22px;
+    }
+    .mission-card {
+        padding: 54px 15px;
+        border-radius: 15px;
+    }
+    .mission_column {
+        gap: 65px;
+    }
+
+    .oct-card h3 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .oct-card p {
+        font-size: 15px;
+    }
+
+    .oct-card {
+        padding: 30px 30px;
+        border-radius: 15px;
+        width: 350px;
+    }
+    .oct-card--1 {
+        margin-left: 35px;
+    }
+    .oct-expert-logo {
+        top: -30px;
+        right: 30px;
+        width: 260px;
+    }
+
+    
+    .pro-slide-box {
+        width: 400px;
+        height: 349px;
+    }
+    .pro-slider {
+        width: 400px;
+    }
+    .pro-slide-box .number {
+        width: 40px;
+        height: 50px;
+        margin-bottom: 20px;
+        border-radius: 3px;
+        font-size: 35px;
+    }
+    .pro-slide-box h3 {
+        font-size: 22px;
+        margin-bottom: 17px;
+    }
+    .pro-slide-box p {
+        font-size: 17px;
+    }
+    .pro-slide-box__inner {
+        padding: 32px 45px;
+    }
+    .slider-arrow-3 .owl-nav button {
+        font-size: 28px !important;
+    }
+    .pro-slider.slider-arrow-centered .owl-nav button {
+        --off: -70px;
+    }
+
+
+    .rev-card {
+        min-height: 240px;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+    .hero-row {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .hero-row .col-s {
+        order: -1;
+        margin: 0 auto;
+    }
+    .hero-row .col-b {
+        width: 100%;
+        text-align: center;
+    }
+
+    .xr-image {
+        text-align: center;
+    }
+
+    .ps_image {
+        text-align: center;
+    }
+
+    .ps_content .bottom-buttons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .cta-card {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-medias-title-ft {
+        margin-left: 0;
+    }
+
+    .service-hero-row {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .service-hero-row .col-s {
+        order: -1;
+        margin: 0 auto;
+        max-width: 60%;
+    }
+    .service-hero-row .col-b {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .service-nav ul li a {
+        font-size: 14px;
+    }
+
+    .serve-const-row .serve-number {
+        margin-left: 0%;
+        margin-right: 10%;
+        margin-top: 30px;
+    }
+    .service-uses-row {
+        --bs-gutter-y: 50px;
+    }
+    .service-use-content {
+        padding: 0;
+    }
+
+    .form-x-outer {
+        justify-content: center;
+    }
+
+
+    .mission-top-shape-arrow {
+        top: -183px;
+    }
+    .mission-card h4 {
+        font-size: 17px;
+    }
+    .oct-card--1 {
+        margin-left: 0px;
+    }
+    .oct-card--2 {
+        margin-left: -168px;
+    }
+    .oct-card--3 {
+        margin-left: -185px;
+    }
+    .oct-expert-logo {
+        top: -40px;
+        right: 0px;
+        width: 260px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header-section {
+        padding: 15px 0;
+    }
+
+    .tools-list {
+        flex-wrap: wrap;
+    }
+
+    .xr-section {
+        padding: 50px 0;
+    }
+    .h2 {
+        font-size: 30px;
+    }
+    .h4 {
+        font-size: 16px;
+    }
+
+    .rev-section {
+        padding: 50px 0;
+    }
+    .rev-section__title {
+        padding-bottom: 20px;
+    }
+    .sec-title {
+        margin-bottom: 30px;
+    }
+
+    .tb-section {
+        padding: 50px 0;
+    }
+    .tb-section__title {
+        padding-bottom: 20px;
+    }
+    .tbr_nav ul {
+        gap: 15px;
+    }
+    .tbr_nav ul li a {
+        padding: 13px 15px;
+        font-size: 14px;
+        border-radius: 3px;
+    }
+    .tbr_content {
+        padding-left: 0;
+    }
+    .ps_content {
+        padding-left: 0;
+    }
+
+    .ns-slide {
+        width: 270px;
+    }
+    .ns-card__content h4 {
+        font-size: 15px;
+        margin-bottom: 18px;
+    }
+    .ns-card__content .tx-btn {
+        font-size: 13px;
+        gap: 7px;
+    }
+    .ns-card__content {
+        padding: 12px 20px 20px;
+        border-radius: 6px;
+        margin: -55px 20px 50px;
+    }
+
+    .ns-section {
+        padding: 50px 0;
+    }
+    .ns-section__title {
+        padding-bottom: 15px;
+    }
+
+    .cta-section {
+        padding: 60px 0;
+    }
+    .cta-card_content h3 {
+        font-size: 30px;
+    }
+    .cta-card .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-section .container {
+        padding: 0 35px;
+    }
+    .copy-right {
+        margin-left: 5px !important;
+    }
+    .footer-section {
+        padding: 50px 0 40px;
+    }
+
+    .service-nav ul {
+        overflow: auto;
+    }
+    .service-nav ul li {
+        width: 150px;
+        flex-shrink: 0;
+    }
+    .service-nav ul li a {
+        min-height: 45px;
+        padding: 6px 5px 1px;
+    }
+    .service-hero {
+        padding: 10px 0 30px;
+    }
+    .service-section {
+        padding: 50px 0;
+    }
+    .service-tab-content {
+        padding: 60px 0 0;
+    }
+    .serve-const-row__title {
+        margin-bottom: 45px;
+    }
+    .serve-const-row {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .serve-const-row .serve-number {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+    .serve-const-row .serve-content h4 {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+    .serve-const-row {
+        margin-bottom: 50px;
+    }
+    .service-uses-wrap {
+        padding: 50px 0 0;
+    }
+    .service-uses-title {
+        padding-bottom: 10px;
+    }
+    .service-use-content h3 {
+        margin-bottom: 20px;
+    }
+    .service-use-content h5 {
+        margin-bottom: 15px;
+    }
+    .service-uses-row {
+        --bs-gutter-y: 30px;
+        margin-bottom: 50px;
+    }
+
+    .contact-content h3 {
+        font-size: 22px;
+    }
+    .form-x {
+        padding: 15px 15px 30px;
+    }
+
+
+    .about-hero__content h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .about-hero__content h4 {
+        font-size: 17px;
+    }
+    .about-hero {
+        padding: 30px 0 20px;
+    }
+
+    .about-o-section {
+        padding: 50px 0;
+    }
+
+    .mission_wrapper {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .mission_image {
+        order: -1;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .mission_column {
+        width: 100%;
+        gap: 20px;
+    }
+    .mission-card h4 {
+        font-size: 22px;
+    }
+
+    .oct-cards_wrap {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .oct-expert-logo {
+        position: static;
+        margin: 0 auto;
+    }
+    .oct-card {
+        width: 100%;
+    }
+    .oct-card--2 {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .oct-card--3 {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .oct-section {
+        padding: 50px 0;
+    }
+
+    /* careers-css */
+
+    .ben_content h2 {
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .ben_content h4 {
+        line-height: 24px;
+    }
+    .ben-accordion-item__title h4 {
+        font-size: 15px;
+        color: #D9D9D9;
+        font-weight: 400;
+        padding-right: 23px;
+    }
+    .ben-accordion-item__title {
+        padding: 15px 0px;
+    }
+    .ben-accordion-item__body__inner p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .ben-accordion-item__body__inner {
+        padding: 13px 0px 15px 0px;
+    }
+    section.ben-section {
+        padding: 40px 0px 50px;
+    }
+    .open-position {
+        padding: 15px 15px;
+    }
+    .open-position .lft h3 {
+        font-size: 24px;
+        line-height: 38px;
+    }
+    .open-position .lft p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .open-position .rit {
+        width: 100%;
+    }
+    .open-position .rit a.button {
+        width: 100%;
+        height: 50px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .open-position:not(:last-child) {
+        margin-bottom: 24px;
+    }
+    section.open-section {
+        padding: 50px 0px 30px;
+    }
+    .contact-content.cont-blk h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    /* careers-css-end */
+
+
+    .pro-slide-box {
+        width: 280px;
+        height: 243px;
+        padding: 0 5.9% 6.5% 0;
+    }
+    .pro-slider {
+        width: 280px;
+    }
+    .pro-slide-box__inner {
+        padding: 20px 30px;
+    }
+    .pro-slide-box .number {
+        width: 30px;
+        height: 38px;
+        margin-bottom: 14px;
+        border-radius: 2px;
+        font-size: 23px;
+    }
+    .pro-slide-box h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    .pro-slide-box p {
+        font-size: 14px;
+    }
+    .pro-slide-box__inner {
+        padding: 20px 15px;
+    }
+    .pro-slider.slider-arrow-centered .owl-nav button {
+        --off: -35px;
+    }
+    .pro-slider-section {
+        padding: 50px 0;
+    }
+    .about-o-content .bottom-buttons .button {
+        min-height: 60px;
+    }
+    .about-o-content .bottom-buttons .row {
+        --bs-gutter-y: 23px;
+    }
+    .about-o-content h4 {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 575px) {
+
+}
+
+
+@media (max-width: 370px) {
+    .pro-slider.slider-arrow-centered .owl-nav button {
+        --off: -20px;
+    }
+}
