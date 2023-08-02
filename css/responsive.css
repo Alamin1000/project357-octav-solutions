@@ -138,7 +138,7 @@
         padding-bottom: 10px;
     }
     .tb-section {
-        padding: 45px 0;
+        padding: 45px 0 10px;
     }
     .tbr_nav ul li a {
         padding: 12px 10px 12px 20px;
@@ -154,6 +154,10 @@
     }
     .ttool-item .txt p {
         font-size: 12px;
+    }
+
+    .tb-top-nav_slider .owl-nav {
+        top: 20px;
     }
 
 
@@ -201,25 +205,38 @@
         top: 2px;
     }
     .arr-ul li {
-        font-size: 17px;
+        font-size: 15px;
         padding-left: 40px;
     }
     .arr-ul {
         gap: 18px;
     }
     .tb-in-txts h4 {
-        font-size: 16px;
+        font-size: 12px;
     }
     .weo-wet .h4 {
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 13px;
     }
     .ellipse-weo {
-        width: 200px;
-        height: 200px;
+        margin-top: -20px;
+        width: 140px;
+        height: 140px;
     }
     .ellipse-weo::after {
         filter: blur(17px);
+    }
+    .fp-overflow {
+        overflow: visible !important;
+    }
+
+    .tb-top-nav-item {
+        min-width: 120px;
+        min-height: 40px;
+        padding: 5px 5px;
+        font-size: 13px;
+        font-weight: 500;
+        border-radius: 10px;
     }
 
 

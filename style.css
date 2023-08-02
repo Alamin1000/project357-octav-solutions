@@ -802,6 +802,7 @@ p:last-child{
 	color: rgba(255, 255, 255, 0.60);
 	background: #1D2021;
 	display: flex;
+  width: 100%;
 }
 .tbr_nav-select::after {
   height: 7px;
@@ -915,6 +916,9 @@ p:last-child{
   background: rgba(255, 255, 255, 0.00);
   box-shadow: 0px 2px 4px 0px rgba(25, 187, 194, 0.27);
 }
+.center .tb-top-nav-item {
+  background: var(--theme__color1);
+}
 
 .slider-arrow-2 .owl-nav button {
   height: 40px;
@@ -1016,7 +1020,7 @@ p:last-child{
 }
 
 .tb-in-txts h4 {
-	font-size: 16px;
+	font-size: 13px;
 }
 
 .weo-wet {
@@ -1027,25 +1031,25 @@ p:last-child{
   flex-direction: column;
 }
 .weo-wet .h4 {
-  font-size: 19.5px;
-  margin-bottom: 17px;
-  font-weight: 700;
-  line-height: 1.55;
+	font-size: 15px;
+	margin-bottom: 11px;
+	font-weight: 700;
+	line-height: 1.55;
 }
 .weo-wet h6 {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   color: rgba(217, 217, 217, 0.19);
 }
 .ellipse-weo {
-  width: 266px;
-  height: 266px;
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+	width: 175px;
+	height: 175px;
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 .ellipse-weo::after {
   content: '';
@@ -1065,7 +1069,7 @@ p:last-child{
 
 }
 .ellipse-weo h4 {
-  font-size: 26px;
+  font-size: 20px;
   color: rgba(217, 217, 217, 0.76);
 }
 /* ---tb-section--more---end */
