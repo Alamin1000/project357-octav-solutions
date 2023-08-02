@@ -116,17 +116,54 @@
     ],
   });
 
+  {
+    function myFunction(x) {
+      if (x.matches) {
+        // If media query matches
+        $(".service-uses-all-active").owlCarousel({
+          loop: true,
+          margin: 10,
+          responsiveClass: true,
+          center: true,
+          nav: true,
+          items: 1,
+          // autoHeight: true,
+          navText: [
+            '<i class="far fa-arrow-left"></i>',
+            '<i class="far fa-arrow-right"></i>',
+          ],
+        });
+      } else {
+        //
+      }
+    }
+    var x = window.matchMedia("(max-width: 991px)");
+    myFunction(x); // Call listener function at run time
+    x.addListener(myFunction); // Attach listener function on state changes
+  }
+
+  $(".nice-select").niceSelect();
+
   // fullPage
   $("[data-aos]").each(function () {
     $(this).addClass("aos-init");
   });
   new fullpage("#fullpage", {
     // sectionsColor: ["yellow", "orange", "#C0C0C0", "#ADD8E6"],
-    anchors: ["page1", "page2", "page3", "page4"],
+    anchors: [
+      "page1",
+      "page2",
+      "page3",
+      "page4",
+      "page5",
+      "page6",
+      "page7",
+      "page8",
+    ],
     navigationTooltips: ["fullPage", "Open", "Easy", "Touch"],
     css3: true,
     scrollingSpeed: 1000,
-    // navigation: true,
+    navigation: true,
     slidesNavigation: true,
     responsiveHeight: 330,
     responsiveWidth: 992,
@@ -160,25 +197,37 @@
 
   // tbr_nav_ul
   {
-    let tbr_nav_ul = document.getElementById("tbr_nav_ul");
-    let nav_options = tbr_nav_ul.querySelectorAll("li a");
-    let nav_options_count = nav_options.length;
-    let i = 1;
-    setInterval(function () {
-      nav_options[i].click();
-      if (i + 1 == nav_options_count) {
-        i = 0;
+    function myFunction(x) {
+      if (x.matches) {
+        // If media query matches
       } else {
-        i++;
+        let tbr_nav_ul = document.getElementById("tbr_nav_ul");
+        let nav_options = tbr_nav_ul.querySelectorAll("li a");
+        let nav_options_count = nav_options.length;
+        let i = 1;
+        setInterval(function () {
+          nav_options[i].click();
+          if (i + 1 == nav_options_count) {
+            i = 0;
+          } else {
+            i++;
+          }
+        }, 5000);
       }
-    }, 5000);
+    }
+    var x = window.matchMedia("(max-width: 991px)");
+    myFunction(x); // Call listener function at run time
+    x.addListener(myFunction); // Attach listener function on state changes
+  }
+  // tbr_nav_ul_mobile
+  {
+    $(document).on("change", ".tbr_nav-select", function () {
+      let a = $('[data-bs-target="' + $(".tbr_nav-select").val() + '"]');
+      a.tab("show");
+    });
   }
 })(jQuery);
 
 $(document).ready(function () {
   // nice-select
-  $(".nice-select").niceSelect();
-
-  // preloader
-  // $("#preloader").fadeOut(500);
 });

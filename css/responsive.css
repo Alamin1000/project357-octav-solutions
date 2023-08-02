@@ -26,7 +26,7 @@
         margin-bottom: 10px;
     }
     .h2-bdr {
-        padding: 0 9px 12px;
+        padding: 0 9px 7px;
     }
     .h4 {
         font-size: 16px;
@@ -56,9 +56,13 @@
         padding: 0 10%;
     }
     .xr-card .icon {
-        margin-bottom: 8px;
+        margin-bottom: 3px;
         width: 50px;
         height: 50px;
+    }
+    .xr-card .txt-btn {
+        font-size: 10px;
+        bottom: 11px;
     }
     .xr-card h3 {
         font-size: 14px;
@@ -104,7 +108,6 @@
     .rev-card__title .icon {
         height: 30px;
         width: 30px;
-        margin-left: 5px;
     }
     .rev-card__title .right h3 {
         font-size: 18px;
@@ -261,22 +264,25 @@
         width: 160px;
     }
     .mission-card h4 {
-        font-size: 22px;
+        font-size: 16px;
     }
     .mission-card {
-        padding: 54px 15px;
+        padding: 40px 15px;
         border-radius: 15px;
+    }
+    .mission-section {
+        padding: 50px 0 40px;
     }
     .mission_column {
         gap: 65px;
     }
 
     .oct-card h3 {
-        font-size: 22px;
-        margin-bottom: 25px;
+        font-size: 18px;
+        margin-bottom: 15px;
     }
     .oct-card p {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .oct-card {
@@ -284,13 +290,21 @@
         border-radius: 15px;
         width: 350px;
     }
-    .oct-card--1 {
-        margin-left: 35px;
+    .oct-card {
+        padding: 20px 20px;
+        border-radius: 12px;
+        width: 350px;
+    }
+    .oct-card--2 {
+        margin-top: 100px;
+    }
+    .oct-card--3 {
+        margin-top: 215px;
     }
     .oct-expert-logo {
         top: -30px;
         right: 30px;
-        width: 260px;
+        width: 210px;
     }
 
     
@@ -377,6 +391,107 @@
     }
 
 
+    .about-o-shape-arrow {
+        bottom: 30px;
+        right: 210px;
+        width: 140px;
+    }
+
+
+
+    .about-o-content h4 {
+        font-size: 18px;
+    }
+    .about-o-content .bottom-buttons .button {
+        min-height: 55px;
+    }
+    .about-o-content .bottom-buttons .row {
+        --bs-gutter-x: 25px;
+        --bs-gutter-y: 20px;
+    }
+    .about-o-content .bottom-buttons {
+        margin-top: 30px;
+    }
+
+    .pro-slide-box {
+        width: 280px;
+        height: 243px;
+        padding: 0 5.9% 6.5% 0;
+    }
+    .pro-slider {
+        width: 280px;
+    }
+    .pro-slide-box__inner {
+        padding: 20px 30px;
+    }
+    .pro-slide-box .number {
+        width: 30px;
+        height: 38px;
+        margin-bottom: 14px;
+        border-radius: 2px;
+        font-size: 23px;
+    }
+    .pro-slide-box h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    .pro-slide-box p {
+        font-size: 14px;
+    }
+    .pro-slide-box__inner {
+        padding: 20px 15px;
+    }
+    .pro-slider.slider-arrow-centered .owl-nav button {
+        --off: -35px;
+    }
+    .pro-slider-section {
+        padding: 50px 0;
+    }
+
+    section.open-section {
+        padding: 70px 0px 30px;
+    }
+    .open-position:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .open-position {
+        padding: 20px 17px;
+        gap: 15px;
+    }
+    .open-position .lft h3 {
+        font-size: 25px;
+        line-height: 34px;
+    }
+    .open-position .lft p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .open-position .rit a.button {
+        width: 200px;
+        height: 50px;
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+
+    .tb-top-nav {
+        margin-bottom: 40px;
+    }
+    .tb-top-nav_slider .owl-dots {
+        margin-top: 20px;
+    }
+    .edu-per-cen__item h3 {
+        font-size: 30px;
+    }
+    .edu-per-cen__item p {
+        font-size: 12px;
+    }
+    .edu-per-cen__item p {
+        font-size: 12px;
+    }
+    .h2 {
+        font-size: 25px
+    }
 
 }
 
@@ -481,6 +596,34 @@
     .fp-overflow {
         max-height: unset;
     }
+
+    .about-o-shape-arrow {
+        bottom: -40px;
+        right: 210px;
+        width: 80px;
+    }
+
+    .section {
+        min-height: unset  !important;
+    }
+
+
+    .go-bottom {
+        display: none;
+    }
+
+    .rev-card {
+        padding: 15px 20px 13px;
+    }
+
+
+    .service-uses-all .owl-nav button {
+        top: 230px !important;
+    }
+
+    .tbr_content {
+        padding-left: 0;
+    }
 }
 
 
@@ -558,15 +701,20 @@
     }
 
     .service-nav ul {
-        overflow: auto;
+        flex-wrap: wrap;
+        gap: 6px;
     }
     .service-nav ul li {
         width: 150px;
         flex-shrink: 0;
+        width: calc(50% - 3px);
     }
     .service-nav ul li a {
         min-height: 45px;
-        padding: 6px 5px 1px;
+        font-size: 12px;
+        line-height: 1.2;
+        padding: 4px 5px 1px;
+        border-bottom-width: 1px;
     }
     .service-hero {
         padding: 10px 0 30px;
@@ -622,7 +770,7 @@
 
 
     .about-hero__content h1 {
-        font-size: 28px;
+        font-size: 22px;
         margin-bottom: 30px;
     }
     .about-hero__content h4 {
@@ -739,42 +887,18 @@
     /* careers-css-end */
 
 
-    .pro-slide-box {
-        width: 280px;
-        height: 243px;
-        padding: 0 5.9% 6.5% 0;
-    }
-    .pro-slider {
-        width: 280px;
-    }
-    .pro-slide-box__inner {
-        padding: 20px 30px;
-    }
-    .pro-slide-box .number {
-        width: 30px;
-        height: 38px;
-        margin-bottom: 14px;
-        border-radius: 2px;
-        font-size: 23px;
-    }
-    .pro-slide-box h3 {
-        font-size: 18px;
-        margin-bottom: 12px;
-    }
-    .pro-slide-box p {
-        font-size: 14px;
-    }
-    .pro-slide-box__inner {
-        padding: 20px 15px;
-    }
-    .pro-slider.slider-arrow-centered .owl-nav button {
-        --off: -35px;
-    }
-    .pro-slider-section {
-        padding: 50px 0;
-    }
+    
+
     .about-o-content .bottom-buttons .button {
-        min-height: 60px;
+        min-height: 50px;
+        font-size: 13px;
+        border-width: 1px;
+        padding: 3px 4px;
+        line-height: 1.2;
+        min-width: initial;
+    }
+    .default-button--nw-rds {
+        border-radius: 5px 20px;
     }
     .about-o-content .bottom-buttons .row {
         --bs-gutter-y: 23px;
@@ -792,16 +916,66 @@
     .rev-cards {
         padding: 0;
     }
+
+
+    .about-o-shape-arrow {
+        bottom: -60px;
+        right: 130px;
+        width: 80px;
+    }
+
+    .pro-slider-section__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .pro-slider {
+        margin: 0 calc(3.6vw * -1);
+        align-self: center;
+    }
+
+    .service-uses-all .owl-nav button {
+        --off: -33px !important;
+        font-size: 28px !important;
+        top: 130px !important;
+    }
 }
 
 
 @media (max-width: 575px) {
+    .mission-card h4 {
+        font-size: 18px;
+    }
 
+    .h2 {
+        font-size: 26px;
+    }
+
+    .about-o-content .bottom-buttons .row {
+        --bs-gutter-y: 12px;
+        --bs-gutter-x: 12px;
+    }
+
+    .service-uses-all .owl-nav button {
+        top: 26vw !important;
+    }
+    .tbr_nav-select {
+        padding: 13px 15px;
+        font-size: 14px;
+        border-radius: -109px;
+    }
 }
 
 
 @media (max-width: 370px) {
     .pro-slider.slider-arrow-centered .owl-nav button {
         --off: -20px;
+    }
+
+    .cta-card_content h3 {
+        font-size: 25px;
+    }
+
+    .tbr_nav-select {
+        font-size: 12px;
     }
 }
