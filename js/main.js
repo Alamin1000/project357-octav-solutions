@@ -217,18 +217,21 @@
       if (x.matches) {
         // If media query matches
       } else {
-        let tbr_nav_ul = document.getElementById("tbr_nav_ul");
-        let nav_options = tbr_nav_ul.querySelectorAll("li a");
-        let nav_options_count = nav_options.length;
-        let i = 1;
-        setInterval(function () {
-          // nav_options[i].click();
-          if (i + 1 == nav_options_count) {
-            i = 0;
-          } else {
-            i++;
-          }
-        }, 5000);
+        let allNav = document.querySelectorAll(".tbr_nav .nav");
+        allNav.forEach((tbr_nav_ul) => {
+          // let tbr_nav_ul = document.getElementById("tbr_nav_ul");
+          let nav_options = tbr_nav_ul.querySelectorAll("li a");
+          let nav_options_count = nav_options.length;
+          let i = 1;
+          setInterval(function () {
+            nav_options[i].click();
+            if (i + 1 == nav_options_count) {
+              i = 0;
+            } else {
+              i++;
+            }
+          }, 5000);
+        });
       }
     }
     var x = window.matchMedia("(max-width: 991px)");
