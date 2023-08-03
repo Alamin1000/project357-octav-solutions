@@ -179,7 +179,7 @@
     navigationTooltips: ["fullPage", "Open", "Easy", "Touch"],
     css3: true,
     scrollingSpeed: 1000,
-    navigation: true,
+    // navigation: true,
     slidesNavigation: true,
     responsiveHeight: 330,
     responsiveWidth: 992,
