@@ -838,14 +838,20 @@ p:last-child{
   text-align: center;
 }
 .ttool-item .icon {
-  height: 115px;
-  margin-bottom: 21px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	height: 115px;
+	width: 110px;
+	margin-bottom: 21px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  filter: grayscale(1);
+  transition: 0.3s;
+}
+.ttool-item:hover .icon {
+  filter: grayscale(0);
 }
 .ttool-item .icon .img {
-
+  width: 100%;
 }
 .ttool-item .txt {
 

@@ -106,8 +106,6 @@
       let all = tb_tp_nav_slider.find(".owl-item.center .tb-top-nav-item");
       all.removeClass("active");
       let center = tb_tp_nav_slider.find(".owl-item.center .tb-top-nav-item");
-      // center.click();
-      console.log(center[0]);
       center.tab("show");
     }, 1);
   });
@@ -224,7 +222,7 @@
         let nav_options_count = nav_options.length;
         let i = 1;
         setInterval(function () {
-          nav_options[i].click();
+          // nav_options[i].click();
           if (i + 1 == nav_options_count) {
             i = 0;
           } else {
@@ -239,9 +237,12 @@
   }
   // tbr_nav_ul_mobile
   {
-    $(document).on("change", ".tbr_nav-select", function () {
-      let a = $('[data-bs-target="' + $(".tbr_nav-select").val() + '"]');
-      a.tab("show");
+    let all_select = document.querySelectorAll(".tbr_nav-select");
+    all_select.forEach((select) => {
+      $(document).on("change", select, function () {
+        let a = $('[data-bs-target="' + select.value + '"]');
+        a.tab("show");
+      });
     });
   }
 })(jQuery);

@@ -1,22 +1,38 @@
-<svg width="108" height="103" viewBox="0 0 108 103" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.1744 102.837C17.2584 102.837 15.7248 101.736 14.2776 99.1655L0.9288 74.4335C0.0216 72.6623 0 72.0791 0 70.8047L20.952 71.7335L25.7472 76.5287H67.7808L32.8968 98.1503C31.1904 99.1439 24.7104 102.837 20.1744 102.837Z" fill="url(#paint0_linear_1_3149)"/>
-<path d="M25.7688 76.5291H7.6464C2.16 76.5291 0 73.6563 0 70.8051C0 68.9907 0.5832 68.0187 1.3824 66.0099L27.7992 2.93788L28.08 2.37628L28.4472 1.81468L29.2032 1.08028L30.3264 0.475483L31.9464 0.129883L34.7328 0.194683L53.0928 7.02028L46.8936 26.5899C46.872 26.5899 25.7688 76.5291 25.7688 76.5291Z" fill="url(#paint1_linear_1_3149)"/>
-<path d="M79.0129 102.816L37.3033 4.104C36.5905 2.4192 35.4241 0.2592 32.4433 0.2592C29.7865 0.2592 28.5121 1.5552 27.7993 2.9376C28.1665 1.944 29.2897 0 32.5297 0H61.3009C63.9577 0 65.2321 1.5552 65.8153 3.0024L108 102.816H79.0129Z" fill="url(#paint2_linear_1_3149)"/>
-<defs>
-<linearGradient id="paint0_linear_1_3149" x1="7.61198" y1="87.0425" x2="20.4182" y2="84.4909" gradientUnits="userSpaceOnUse">
-<stop stop-color="#3F3F3F"/>
-<stop offset="0.51" stop-color="#6B6B6B"/>
-<stop offset="1" stop-color="#A6A6A6"/>
-</linearGradient>
-<linearGradient id="paint1_linear_1_3149" x1="39.3309" y1="8.24702" x2="32.9758" y2="23.1717" gradientUnits="userSpaceOnUse">
-<stop stop-color="#4D4D4D"/>
-<stop offset="0.493" stop-color="#999A99"/>
-<stop offset="1" stop-color="#A6A6A6"/>
-</linearGradient>
-<linearGradient id="paint2_linear_1_3149" x1="45.7389" y1="1.64958" x2="55.0789" y2="23.8924" gradientUnits="userSpaceOnUse">
-<stop stop-color="#D9D9D9"/>
-<stop offset="0.515" stop-color="#CACBD3"/>
-<stop offset="1" stop-color="#A6A6A6"/>
-</linearGradient>
-</defs>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="50px" height="50px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_00000154394527456976016930000004041287315377882261_);}
+	.st2{fill:url(#SVGID_00000006666505844014053260000013868713217365243040_);}
+</style>
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-9247.125" y1="2538.4678" x2="-9184.5186" y2="2550.9419" gradientTransform="matrix(0.0947 0 0 -0.0947 879.2268 281.8904)">
+		<stop  offset="0" style="stop-color:#2B7A77"/>
+		<stop  offset="0.51" style="stop-color:#4EBAA9"/>
+		<stop  offset="1" style="stop-color:#5CC2B1"/>
+	</linearGradient>
+	<path class="st0" d="M9.34,48.81c-1.35,0-2.06-0.51-2.73-1.7L0.43,35.66C0.01,34.84,0,34.57,0,33.98l9.7,0.43l2.22,2.22h19.46
+		L15.23,46.64C14.44,47.1,11.44,48.81,9.34,48.81z"/>
+	
+		<linearGradient id="SVGID_00000065071709074603628060000016169871326815817863_" gradientUnits="userSpaceOnUse" x1="-9092.0596" y1="2923.6797" x2="-9123.1279" y2="2850.717" gradientTransform="matrix(0.0947 0 0 -0.0947 879.2268 281.8904)">
+		<stop  offset="0" style="stop-color:#236736"/>
+		<stop  offset="0.493" style="stop-color:#6BA443"/>
+		<stop  offset="1" style="stop-color:#86C146"/>
+	</linearGradient>
+	<path style="fill:url(#SVGID_00000065071709074603628060000016169871326815817863_);" d="M11.93,36.63H3.54C1,36.63,0,35.3,0,33.98
+		c0-0.84,0.27-1.29,0.64-2.22l12.23-29.2L13,2.3l0.17-0.26l0.35-0.34l0.52-0.28l0.75-0.16l1.29,0.03l8.5,3.16l-2.87,9.06
+		C21.7,13.51,11.93,36.63,11.93,36.63z"/>
+	
+		<linearGradient id="SVGID_00000140693901658627303250000006788311833167605153_" gradientUnits="userSpaceOnUse" x1="-9060.7334" y1="2955.9314" x2="-9015.0723" y2="2847.1921" gradientTransform="matrix(0.0947 0 0 -0.0947 879.2268 281.8904)">
+		<stop  offset="0" style="stop-color:#29A5E3"/>
+		<stop  offset="0.515" style="stop-color:#356EB9"/>
+		<stop  offset="1" style="stop-color:#394DA5"/>
+	</linearGradient>
+	<path style="fill:url(#SVGID_00000140693901658627303250000006788311833167605153_);" d="M36.58,48.8L17.27,3.1
+		c-0.33-0.78-0.87-1.78-2.25-1.78c-1.23,0-1.82,0.6-2.15,1.24c0.17-0.46,0.69-1.36,2.19-1.36h13.32c1.23,0,1.82,0.72,2.09,1.39
+		L50,48.8L36.58,48.8L36.58,48.8z"/>
+</g>
 </svg>
