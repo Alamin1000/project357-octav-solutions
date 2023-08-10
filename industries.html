@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
     <link rel="stylesheet" type="text/css" href="css/swiper.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://kit-pro.fontawesome.com/releases/v5.15.2/css/pro.min.css"
       rel="stylesheet"
@@ -45,7 +46,7 @@
           </ul>
           <div class="d-flex align-items-center justify-content-center mt-3">
             <a
-              href="#"
+              href="contact.html"
               class="default-button default-button--bordered default-button--sm"
               >Contact us</a
             >
@@ -73,7 +74,7 @@
               </ul>
             </div>
             <a
-              href="#"
+              href="contact.html"
               class="default-button default-button--sm default-button--bordered hr-button d-lg-flex d-none"
               >Contact us</a
             >
@@ -92,8 +93,12 @@
           <section class="service-hero">
             <div class="container">
               <div class="hero-section__inner">
-                <div class="service-hero-row">
-                  <div class="col-b">
+                <div class="service-hero-row" v>
+                  <div
+                    class="col-b"
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                  >
                     <div class="hero-content">
                       <h1 class="h1 mb-2 pb-1">
                         VR/AR/MR For
@@ -105,7 +110,11 @@
                       </h4>
                     </div>
                   </div>
-                  <div class="col-s d-lg-block d-none">
+                  <div
+                    class="col-s d-lg-block d-none"
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
+                  >
                     <div class="hero-image">
                       <img
                         src="images/industries-hero.png"
@@ -133,7 +142,11 @@
           <section class="tb-section">
             <div class="container">
               <div class="tb-section__inner">
-                <div class="tb-top-nav">
+                <div
+                  class="tb-top-nav"
+                  data-aos="fade-in"
+                  data-aos-duration="1500"
+                >
                   <ul
                     class="tb-top-nav_slider tb-top-nav_slider-active owl-carousel nav slider-arrow-2 slider-dots-1"
                     id="tb-top-nav_slider"
@@ -203,7 +216,11 @@
                 </div>
 
                 <!-- industries-tab-content -->
-                <div class="industries-tab-content tab-content">
+                <div
+                  class="industries-tab-content tab-content"
+                  data-aos="zoom-in"
+                  data-aos-duration="1500"
+                >
                   <!-- industries-tab-pane -->
                   <div
                     class="industries-tab-pane tab-pane show fade active"
@@ -1579,7 +1596,11 @@
           <section class="cta-section">
             <div class="container">
               <div class="cta-section__inner">
-                <div class="cta-card">
+                <div
+                  class="cta-card"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
                   <div class="cta-card_content">
                     <h3>Let's Build Your Immersive Future Together</h3>
                   </div>
@@ -1598,7 +1619,11 @@
           <!-- cta-section-end -->
 
           <!-- footer-section -->
-          <footer class="footer-section">
+          <footer
+            class="footer-section"
+            data-aos="fade-in"
+            data-aos-duration="1500"
+          >
             <div class="container">
               <div class="footer-section__inner">
                 <div class="footer-row row g-5">
@@ -1683,7 +1708,11 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/fullpage.min.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      AOS.init({ once: true });
+    </script>
     <!-- End All Js -->
   </body>
 </html>

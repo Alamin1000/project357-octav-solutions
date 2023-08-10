@@ -1806,6 +1806,7 @@ p:last-child{
 }
 .about-o-content .bottom-buttons .button:hover {
   background: #19B8BF;
+  color: #fff;
 }
 /* ---about-o-section---end */
 
