@@ -36,7 +36,12 @@
     center: true,
     nav: false,
     dots: false,
+    dotsEach: 5,
     autoplay: true,
+    slideTransition: "linear",
+    autoplayTimeout: 2300,
+    autoplaySpeed: 2300,
+    autoplayHoverPause: false,
     navText: [
       '<i class="far fa-arrow-left"></i>',
       '<i class="far fa-arrow-right"></i>',
@@ -115,21 +120,36 @@
   //   yu.tab("show");
   // }, 1);
 
-  $(".pro-slider-active").owlCarousel({
-    loop: true,
-    margin: 10,
-    responsiveClass: true,
-    center: true,
-    nav: true,
-    items: 1,
-    animateIn: "fadeIn",
-    // animateOut: "fadeOut",
-    touchDrag: false,
-    mouseDrag: false,
-    navText: [
-      '<i class="far fa-chevron-left"></i>',
-      '<i class="far fa-chevron-right"></i>',
-    ],
+  // $(".pro-slider-active").owlCarousel({
+  //   loop: true,
+  //   margin: 10,
+  //   responsiveClass: true,
+  //   center: true,
+  //   nav: true,
+  //   items: 1,
+  //   animateIn: "fadeIn",
+  //   // animateOut: "fadeOut",
+  //   touchDrag: false,
+  //   mouseDrag: false,
+  //   navText: [
+  //     '<i class="far fa-chevron-left"></i>',
+  //     '<i class="far fa-chevron-right"></i>',
+  //   ],
+  // });
+
+  var swiper = new Swiper(".pro-slider-active", {
+    effect: "cards",
+    grabCursor: true,
+
+    cardsEffect: {
+      perSlideOffset: 10,
+      perSlideRotate: 0,
+      slideShadows: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 
   {
@@ -153,7 +173,7 @@
         //
       }
     }
-    var x = window.matchMedia("(max-width: 991px)");
+    var x = window.matchMedia("(max-width: 767px)");
     myFunction(x); // Call listener function at run time
     x.addListener(myFunction); // Attach listener function on state changes
   }

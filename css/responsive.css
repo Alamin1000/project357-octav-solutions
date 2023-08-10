@@ -1,11 +1,7 @@
 
 
+
 @media (max-width: 1399px) {
- 
-}
-
-
-@media (max-width: 1199px) {
     .hero-row .col-s {
         width: 420px;
         max-width: 100%;
@@ -227,7 +223,7 @@
         filter: blur(17px);
     }
     .fp-overflow {
-        overflow: visible !important;
+        overflow: auto !important;
     }
 
     .tb-top-nav-item {

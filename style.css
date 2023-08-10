@@ -85,7 +85,7 @@ p:last-child{
   width: 100%;
   overflow: hidden;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .container {
     max-width: 1145px;
   }
@@ -226,8 +226,8 @@ p:last-child{
   height: 100%;
   padding: 70px 20px 40px;
   overflow: auto;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
 }
 .offcanvas-menu .offmenu :-webkit-scrollbar {
   display: none;
@@ -321,11 +321,23 @@ p:last-child{
 }
 
 .fp-overflow {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  
 }
-.fp-overflow::-webkit-scrollbar {
-  display: none;
+/* width */::-webkit-scrollbar {
+  width: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ABABAB; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--theme__color1); 
+  border-radius: 2px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 /* ---full-page---end */
 
@@ -448,6 +460,22 @@ p:last-child{
 }
 .tools-list {
   
+}
+.tools-list::before, .tools-list::after {
+	content: '';
+	height: 100%;
+	width: 30px;
+	display: block;
+	background: linear-gradient(to right, #121416, #121416, transparent);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.tools-list::after {
+	right: 0;
+	left: unset;
+	transform: rotate(180deg);
 }
 .tool-item {
   gap: 10px;
@@ -623,6 +651,8 @@ p:last-child{
   --bs-gutter-x: 18px;
   --bs-gutter-y: 20px;
   padding: 0 10%;
+  position: relative;
+  z-index: 1;
 }
 .rev-cards [class*='col-'] {
   flex-direction: column;
@@ -637,10 +667,30 @@ p:last-child{
 	display: flex;
 	flex-direction: column;
 	min-height: 205px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.rev-card::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--theme__color1);
+  z-index: -1;
+  clip-path: circle(0% at 100% 0%);
+  transition: 800ms cubic-bezier(0.375, 0.880, 0.505, 0.910);
+}
+.rev-card.active::after,
+.rev-card:hover::after {
+  clip-path: circle(170% at 100% 0%);
 }
 .rev-card.active,
 .rev-card:hover {
-  background: var(--theme__color1);
+  /* background: var(--theme__color1); */
   color: #fff;
 }
 .rev-card__title {
@@ -677,6 +727,18 @@ p:last-child{
 .rev-card__title .right {
 
 }
+.rev-card.active .rev-card__title .right,
+.rev-card:hover .rev-card__title .right {
+  animation: xcttl 800ms cubic-bezier(0.375, 0.880, 0.505, 0.910) forwards;
+}
+@keyframes xcttl {
+  from {
+    transform: translate(30px,0);
+  }
+  to {
+    transform: translate(0,0%);
+  }
+}
 .rev-card__title .right h3 {
 	font-size: 20px;
 	font-weight: 600;
@@ -689,6 +751,19 @@ p:last-child{
 .rev-card__body__in {
 
 }
+.rev-card.active .rev-card__body__in,
+.rev-card:hover .rev-card__body__in {
+  animation: xcb-in 800ms cubic-bezier(0.375, 0.880, 0.505, 0.910) forwards;
+}
+@keyframes xcb-in {
+  from {
+    transform: translate(0,50%);
+  }
+  to {
+    transform: translate(0,0%);
+  }
+}
+
 .rev-card__body p {
 	font-size: 14px;
 	line-height: 1.65;
@@ -711,6 +786,20 @@ p:last-child{
 .rev-card:hover .rev-card__bbt {
   display: flex;
 
+}
+.rev-card.active .txt-btn,
+.rev-card:hover .txt-btn {
+  animation: xcbtn 800ms cubic-bezier(0.375, 0.880, 0.505, 0.910) forwards;
+}
+@keyframes xcbtn {
+  from {
+    transform: translate(50%,0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0,0%);
+    opacity: 1;
+  }
 }
 .txt-btn {
 	color: #292835;
@@ -768,6 +857,11 @@ p:last-child{
   left: 50%;
   transform: translate(-50%,0);
   z-index: -1;
+  transition: 2s;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.fp-completely .tbr_nav::after {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 .tbr_nav ul {
   gap: 32px;
@@ -1686,6 +1780,10 @@ p:last-child{
 }
 .about-o-image {
   text-align: center;
+  transition: 0.3s;
+}
+.about-o-image:hover {
+  filter: drop-shadow(0 0 15px #19bcc2bd);
 }
 .about-o-image .img {
 
@@ -1838,13 +1936,13 @@ p:last-child{
   margin-top: 156px;
   margin-left: -76px;
   position: relative;
-  z-index: 49;
+  z-index: 51;
 }
 .oct-card--3 {
   margin-top: 335px;
   margin-left: -125px;
   position: relative;
-  z-index: 48;
+  z-index: 52;
 }
 .oct-card h3 {
   font-size: 28px;
@@ -2026,9 +2124,12 @@ section.open-section {
 .pro-slide-box {
 	width: 503px;
 	height: 438px;
-	background: url('images/pro-slide.png') no-repeat center center/contain;
+	/* background: url('images/pro-slide.png') no-repeat center center/contain; */
 	text-align: center;
-	padding: 0 8.5% 9% 0;
+	/* padding: 0 8.5% 9% 0; */
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
 }
 .pro-slide-box__inner {
   padding: 35px 60px;
