@@ -60,9 +60,9 @@
   });
 
   // NS SLIDER
-  var $nsSlider = $(".ns-slider-active")
-  $nsSlider.children().each( function( index ) {
-    $(this).attr( 'data-position', index ); 
+  var $nsSlider = $(".ns-slider-active");
+  $nsSlider.children().each(function (index) {
+    $(this).attr("data-position", index);
   });
 
   $nsSlider.owlCarousel({
@@ -87,25 +87,27 @@
         items: 3,
       },
     },
-  });  
-  
-  $(document).on('click', '.owl-item>*', function() {
-    var $speed = 300; 
-    $nsSlider.trigger('to.owl.carousel', [$(this).data( 'position' ), $speed] );
-  });
-  
-
-// tb_tp_nav_slider
-  let tb_tp_nav_slider = $(".tb-top-nav_slider-active");
-  
-  tb_tp_nav_slider.children().each( function( index ) {
-    $(this).attr( 'data-position', index );
   });
 
-  $(document).on('click', '.owl-item>*', function() {
+  $(document).on("click", ".owl-item>*", function () {
     var $speed = 300;
-    tb_tp_nav_slider.trigger('to.owl.carousel', [$(this).data( 'position' ), $speed] );
-  }); 
+    $nsSlider.trigger("to.owl.carousel", [$(this).data("position"), $speed]);
+  });
+
+  // tb_tp_nav_slider
+  let tb_tp_nav_slider = $(".tb-top-nav_slider-active");
+
+  tb_tp_nav_slider.children().each(function (index) {
+    $(this).attr("data-position", index);
+  });
+
+  $(document).on("click", ".owl-item>*", function () {
+    var $speed = 300;
+    tb_tp_nav_slider.trigger("to.owl.carousel", [
+      $(this).data("position"),
+      $speed,
+    ]);
+  });
 
   // console.log(tb_tp_nav_slider);
   tb_tp_nav_slider.owlCarousel({
@@ -190,8 +192,8 @@
           items: 1,
           // autoHeight: true,
           navText: [
-            '<i class="far fa-arrow-left"></i>',
-            '<i class="far fa-arrow-right"></i>',
+            '<i class="far fa-chevron-left"></i>',
+            '<i class="far fa-chevron-right"></i>',
           ],
         });
       } else {
@@ -221,10 +223,10 @@
       "page7",
       "page8",
     ],
-    navigationTooltips: ["fullPage", "Open", "Easy", "Touch"],
+    // navigationTooltips: ["fullPage", "Open", "Easy", "Touch"],
     css3: true,
     scrollingSpeed: 1000,
-    // navigation: true,
+    navigation: true,
     slidesNavigation: true,
     responsiveHeight: 330,
     responsiveWidth: 992,
@@ -269,7 +271,7 @@
           let nav_options_count = nav_options.length;
           let i = 1;
           setInterval(function () {
-            nav_options[i].click();
+            // nav_options[i].click();
             if (i + 1 == nav_options_count) {
               i = 0;
             } else {
@@ -311,23 +313,21 @@ $(document).ready(function () {
   }
 });
 
-
-
-const overlaplr = document.querySelectorAll('.overlap-lr-nav')
-overlaplr.forEach(wrap => {
-  let arrows = wrap.querySelectorAll('button')
-  arrows.forEach(arrow => {
-    let icon = arrow.querySelector('i')
-    arrow.addEventListener('mousemove', (e)=>{
-      arrow.classList.add('active')
-      let x = e.offsetX
-      let y = e.offsetY
+const overlaplr = document.querySelectorAll(".overlap-lr-nav");
+overlaplr.forEach((wrap) => {
+  let arrows = wrap.querySelectorAll("button");
+  arrows.forEach((arrow) => {
+    let icon = arrow.querySelector("i");
+    arrow.addEventListener("mousemove", (e) => {
+      arrow.classList.add("active");
+      let x = e.offsetX;
+      let y = e.offsetY;
       console.log(x, y);
-      icon.style.left = x + 'px'
-      icon.style.top = y + 'px'
-    })
-    arrow.addEventListener('mouseleave', (e)=>{
-      arrow.classList.remove('active')
-    })
+      icon.style.left = x + "px";
+      icon.style.top = y + "px";
+    });
+    arrow.addEventListener("mouseleave", (e) => {
+      arrow.classList.remove("active");
+    });
   });
 });

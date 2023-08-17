@@ -85,6 +85,11 @@ p:last-child{
   width: 100%;
   overflow: hidden;
 }
+@media (max-width: 1399px) and (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
 @media (min-width: 1400px) {
   .container {
     max-width: 1145px;
@@ -318,6 +323,7 @@ p:last-child{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 .fp-overflow {
@@ -355,7 +361,7 @@ p:last-child{
   margin-top: 5vh;
 }
 .go-bottom-outer {
-  margin-top: 4vh;
+  margin-top: 6vh;
   margin-bottom: auto;
 }
 
@@ -407,6 +413,7 @@ p:last-child{
 /* ---service-hero--- */
 .service-hero {
   padding: 20px 0 50px;
+  overflow: hidden;
 }
 
 .service-hero-row {
@@ -525,7 +532,7 @@ p:last-child{
   height: 42px;
   border: 3px solid #D9D9D9;
   border-radius: 40px;
-  margin-top: 58px;
+  margin-top: 10px;
   display: inline-flex;
   position: relative;
 }
@@ -609,8 +616,24 @@ p:last-child{
   position: relative;
   z-index: 10;
 }
+.xr-card::after {
+	content: '';
+	height: 100%;
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: var(--theme__color1);
+	z-index: -1;
+	clip-path: circle(0% at 100% 0%);
+	transition: 800ms cubic-bezier(0.375, 0.880, 0.505, 0.910);
+}
+.xr-card.active::after,
+.xr-card:hover::after {
+  clip-path: circle(170% at 100% 0%);
+}
 .xr-card:hover {
-  background: var(--theme__color1);
   color: #fff;
 }
 .xr-card .icon {
@@ -645,12 +668,15 @@ p:last-child{
   position: absolute;
   bottom: 21px;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%,10px);
   opacity: 0;
-  transition: 0.3s;
+  visibility: hidden;
+  transition: 500ms cubic-bezier(0.375, 0.880, 0.505, 0.910);
 }
 .xr-card:hover .txt-btn {
   opacity: 1;
+  visibility: visible;
+  transform: translate(-50%,0px);
 }
 /* ---xr-section---end */
 
@@ -853,6 +879,7 @@ p:last-child{
 /* ---tb-section--- */
 .tb-section {
   padding: 75px 0;
+  overflow: hidden;
 }
 .tb-section__inner {
 
@@ -1141,7 +1168,7 @@ p:last-child{
 }
 
 .tb-in-txts h4 {
-	font-size: 13px;
+	font-size: 19.5px;
 }
 
 .weo-wet {
@@ -1199,6 +1226,7 @@ p:last-child{
 /* ---ps-section--- */
 .ps-section {
   padding: 75px 0;
+  overflow: hidden;
 }
 .ps-section__inner {
 
@@ -1408,7 +1436,7 @@ p:last-child{
   padding: 48px 38px;
   gap: 80px;
   border: 2.5px solid transparent;
-  filter: drop-shadow(0px 50px 50px rgba(55, 55, 55, 0.11));
+  box-shadow: 0px 2px 20px 8px rgba(25, 187, 194, 0);
   display: flex;
   align-items: center;
   border-radius: 9px;
@@ -1656,6 +1684,7 @@ p:last-child{
 /* ---contact-section--- */
 .contact-section {
   padding: 70px 0 35px;
+  overflow: hidden;
 }
 .contact-section__inner {
   padding: 0 50px;
@@ -1694,6 +1723,10 @@ p:last-child{
   justify-content: center;
   text-align: center;
   background:  rgba(255, 255, 255, 0.05);
+  transition: 0.3s;
+}
+.contact-a:hover .icon {
+  color: #19bbc2;
 }
 .contact-a .txt {
 
@@ -1801,6 +1834,7 @@ p:last-child{
 /* ---about-o-section--- */
 .about-o-section {
   padding: 75px 0;
+  overflow: hidden;
 }
 .about-o-shape-arrow {
 	position: absolute;
@@ -1880,12 +1914,30 @@ p:last-child{
   transition: 0.3s;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 .mission-card:hover {
-  background: var(--theme__color1);
+  /* background: var(--theme__color1); */
 }
-.mission-card .theme-color1 {
-  transition: 0.3s;
+.mission-card::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--theme__color1);
+  z-index: -1;
+  clip-path: circle(0% at 100% 0%);
+  transition: 800ms cubic-bezier(0.375, 0.880, 0.505, 0.910);
+}
+.mission-card.active::after,
+.mission-card:hover::after {
+  clip-path: circle(170% at 100% 0%);
+}
+.mission-card .color-theme1 {
+  transition: 0.8s !important;
 }
 .mission-card:hover .color-theme1 {
   color: #171C24 !important;
@@ -2150,6 +2202,25 @@ section.open-section {
 .pro-slider.slider-arrow-centered .owl-nav button {
   --off: -116px;
 }
+.pro-slider .swiper-button-prev,
+.pro-slider .swiper-button-next {
+  color: #19bbc2;
+  width: 10px !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-button-next::before,
+.swiper-button-prev::before {
+  font-size: 30px;
+  content: '\f053';
+  font-family: "Font Awesome 5 Pro";
+}
+.swiper-button-next::before {
+  content: '\f054';
+}
+
 .pro-slide {
   opacity: 0;
   transition: 1.7s;

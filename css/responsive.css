@@ -35,10 +35,10 @@
         
     }
     .go-bottom-button {
-        margin-top: 30px;
+        /* margin-top: 30px; */
     }
     .tools-section {
-        padding: 30px 0;
+        padding: 10px 0;
     }
 
     .section {
@@ -144,12 +144,12 @@
         gap: 25px;
     }
     .ttool-item .icon {
-        height: 65px;
+        height: 80px;
         margin-bottom: 9px;
-        width: 50px;
+        width: 70px;
     }
     .ttool-item .txt p {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .tb-top-nav_slider .owl-nav {
@@ -208,7 +208,7 @@
         gap: 18px;
     }
     .tb-in-txts h4 {
-        font-size: 12px;
+        font-size: 16px;
     }
     .weo-wet .h4 {
         font-size: 14px;
@@ -351,6 +351,10 @@
     .pro-slider.slider-arrow-centered .owl-nav button {
         --off: -70px;
     }
+    .swiper-button-next::before,
+        .swiper-button-prev::before {
+        font-size: 20px;
+        }
 
 
     .ns-slide {
@@ -506,10 +510,21 @@
         font-size: 25px
     }
 
+
+    .about-o-row {
+        align-items: flex-start;
+    }
+    .about-o-content {
+        margin-top: 50px;
+    }
 }
 
 
 @media (max-width: 991px) {
+    .about-o-content {
+        margin-top: 0px;
+    }
+
     .hero-row {
         flex-wrap: wrap;
         gap: 40px;
